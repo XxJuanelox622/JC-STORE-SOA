@@ -1,0 +1,342 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    font-family:'Segoe UI',sans-serif;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar-custom{
+    background:#020617;
+    padding:15px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.4);
+}
+
+.navbar-brand{
+    font-size:28px;
+    font-weight:bold;
+    color:#38bdf8 !important;
+}
+
+.nav-link{
+    color:white !important;
+    margin-left:15px;
+    transition:0.3s;
+    font-weight:500;
+}
+
+.nav-link:hover{
+    color:#38bdf8 !important;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(to right,#020617,#0f172a);
+}
+
+.hero h1{
+    font-size:65px;
+    margin-bottom:20px;
+    font-weight:bold;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+    color:#cbd5e1;
+}
+
+/* =========================
+   BOTONES
+========================= */
+
+.btn-custom{
+    background:#38bdf8;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:12px;
+    font-weight:bold;
+    transition:0.3s;
+    box-shadow:0 0 10px rgba(56,189,248,0.4);
+}
+
+.btn-custom:hover{
+    transform:translateY(-4px);
+    background:#0ea5e9;
+    box-shadow:0 0 20px rgba(56,189,248,0.7);
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.info-card,
+.product-card,
+.login-box{
+    position:relative;
+    overflow:hidden;
+    background:#1e293b;
+    border-radius:20px;
+    box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+
+/* EFECTO AZUL */
+
+.info-card::before,
+.product-card::before,
+.login-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-100%;
+
+    width:100%;
+    height:100%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(56,189,248,0.15),
+        transparent
+    );
+
+    transition:0.7s;
+}
+
+.info-card:hover::before,
+.product-card:hover::before,
+.login-box:hover::before{
+
+    left:100%;
+}
+
+/* INFO CARD */
+
+.info-card{
+    padding:30px;
+    text-align:center;
+    transition:0.3s;
+    height:100%;
+}
+
+.info-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px rgba(56,189,248,0.4);
+}
+
+.info-card h3{
+    margin-bottom:15px;
+}
+
+.info-card p{
+    color:#cbd5e1;
+}
+
+/* =========================
+   PRODUCTOS
+========================= */
+
+.product-card{
+    transition:0.3s;
+    height:100%;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(56,189,248,0.4);
+}
+
+.product-image{
+    overflow:hidden;
+}
+
+.product-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    transition:0.4s;
+}
+
+.product-card:hover img{
+    transform:scale(1.08);
+}
+
+.product-info{
+    padding:20px;
+}
+
+.product-info h4{
+    margin-bottom:10px;
+    font-size:20px;
+}
+
+.price{
+    color:#38bdf8;
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+/* =========================
+   TITULOS
+========================= */
+
+.title-page{
+    font-size:50px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.subtitle{
+    color:#cbd5e1;
+    font-size:18px;
+    margin-top:10px;
+}
+
+/* =========================
+   LOGIN
+========================= */
+
+.login-container{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-box{
+    width:400px;
+    padding:40px;
+    animation:fadeIn 1s ease;
+}
+
+.login-box h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.login-text{
+    text-align:center;
+    color:#cbd5e1;
+    margin-bottom:25px;
+}
+
+.login-box input{
+    width:100%;
+    padding:12px;
+    margin-bottom:20px;
+    border:none;
+    border-radius:10px;
+    background:#334155;
+    color:white;
+    font-size:16px;
+}
+
+.login-box input:focus{
+    outline:none;
+    border:2px solid #38bdf8;
+}
+
+#message{
+    text-align:center;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+/* =========================
+   FORMULARIOS
+========================= */
+
+.form-control{
+    background:#334155;
+    border:none;
+    color:white;
+    padding:12px;
+}
+
+.form-control:focus{
+    background:#334155;
+    color:white;
+    border:2px solid #38bdf8;
+    box-shadow:none;
+}
+
+.api-box{
+    background:#334155;
+    padding:15px;
+    border-radius:12px;
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#020617;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+    color:#cbd5e1;
+}
+
+/* =========================
+   ANIMACIONES
+========================= */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .title-page{
+        font-size:38px;
+    }
+
+    .login-box{
+        width:90%;
+    }
+}
