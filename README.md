@@ -198,9 +198,8 @@ Esto permite compatibilidad entre diferentes tecnologías.
 - Python
 - Flask
 - HTML5
-- CSS3
-- JavaScript
-- Bootstrap 5
+- CSS
+- JavaScrip
 
 ---
 
